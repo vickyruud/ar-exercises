@@ -10,3 +10,15 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+puts "Please enter store name"
+storeName = gets.chomp
+# puts "Please enter annual revenue"
+# annualRev = gets.chomp
+# puts "Do they sell men's apparel?"
+# mens = gets.chomp
+# puts "Do they sell women's apparel?"
+# womens = gets.chomp
+
+@newStore = Store.create(:name => storeName)
+
+puts @newStore.errors.full_messages
